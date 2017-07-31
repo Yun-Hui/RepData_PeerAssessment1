@@ -13,7 +13,7 @@ library(plyr)
 
 ```
 
-##Loading and preprocessing the data
+## Loading and preprocessing the data
 
 ```{r load data}
 
