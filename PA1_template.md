@@ -21,7 +21,7 @@ Part I: What is mean total number of steps taken per day?
 
     qplot(df_s_d$total, geom="histogram",binwidth = 1000,xlab="total number of steps taken each day") 
 
-![](PA1_template_files/figure-markdown_strict/hisgram-1.png)
+![](figure-markdown_strict/hisgram-1.png)
 
     mean<-round(mean(df_s_d$total),digits=2)
     median<-median(df_s_d$total)
