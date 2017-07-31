@@ -43,7 +43,7 @@ Part II: What is the average daily activity pattern?
          ylab="Average steps taken",
          main="Time series - Average steps taken during 5 minute interval")
 
-![](PA1_template_files/figure-markdown_strict/interval%20-1.png)
+![](figure-markdown_strict/interval%20-1.png)
 
 #### 2.Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -73,7 +73,7 @@ Part III: Imputing missing values
     names(df2_agg)=c("date","steps")
     qplot(df2_agg$steps, geom="histogram",binwidth = 1000,xlab="total number of steps taken each day -impute missing steps") 
 
-![](PA1_template_files/figure-markdown_strict/histogram_Nomissing-1.png)
+![](figure-markdown_strict/histogram_Nomissing-1.png)
 
 #### 4.Report the mean and median total number of steps taken per day. Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?
 
@@ -104,5 +104,5 @@ Are there differences in activity patterns between weekdays and weekends?
     p<-ggplot(df2_agg,aes(interval,steps))
     p+geom_line()+facet_wrap(~weekend, nrow = 2)+labs(x="Interval",y="Number of Steps")
 
-![](PA1_template_files/figure-markdown_strict/time%20series%20chart-1.png)
+![](figure-markdown_strict/time%20series%20chart-1.png)
 
